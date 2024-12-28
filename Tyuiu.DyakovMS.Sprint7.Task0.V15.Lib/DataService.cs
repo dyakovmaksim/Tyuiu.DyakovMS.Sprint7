@@ -52,9 +52,9 @@ namespace Tyuiu.DyakovMS.Sprint7.Project.V15.Lib
                 .Select(c => c.ContractAmount)
                 .ToList();
 
-            if (amounts.Count == 0)
+            if (!amounts.Any())
             {
-                return (0, 0, 0, 0); 
+                return (0, 0, 0, 0);
             }
 
             return (
